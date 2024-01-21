@@ -2,8 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "sankar6-terraform-remote-state" 
     key            = "terraform.tfstate" 
-    region         = "eu-north-1"
-    dynamodb_table = "sankar-terraform-state-lock" 
+    region         = "eu-north-1" 
   }
 }
 provider "aws" {
